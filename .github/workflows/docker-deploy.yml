@@ -1,19 +1,23 @@
+
+GitHub Actions requires proper indentation.
+
+### Replace the entire file with this:
+
+```yaml
 name: Docker CI/CD Pipeline
 
 on:
-push:
-branches:
-- main
+  push:
+    branches:
+      - main
 
 jobs:
-build:
-runs-on: ubuntu-latest
+  build:
+    runs-on: ubuntu-latest
 
-```
-steps:
-  - name: Checkout Code
-    uses: actions/checkout@v4
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v4
 
-  - name: Build Docker Image
-    run: docker build -t github-actions-app .
-```
+      - name: Build Docker Image
+        run: docker build -t github-actions-app .
