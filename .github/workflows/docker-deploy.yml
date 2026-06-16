@@ -1,9 +1,4 @@
 
-GitHub Actions requires proper indentation.
-
-### Replace the entire file with this:
-
-```yaml
 name: Docker CI/CD Pipeline
 
 on:
